@@ -4,3 +4,6 @@
 # C Output
 *.o
 *.a
+
+# Executables
+geometry_test
