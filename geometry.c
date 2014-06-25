@@ -4,12 +4,10 @@
  * CSCI 3308
  * Summer 2014
  *
- * Description:
  * This file contains a simple geomtery functions.
  *
  */
 
-/* Local Includes */
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -40,6 +38,7 @@ double coord_2d_dist(const coord_2d_t* a, const coord_2d_t* b){
 
 bool coord_2d_eq(const coord_2d_t* a, const coord_2d_t* b){
 
+    /* Equal if dist <= FUZZY_EQ */
     if(coord_2d_dist(a, b) <= FUZZY_EQ){
         return true;
     }
