@@ -90,7 +90,49 @@ START_TEST(test_2d_dist)
 
 }
 END_TEST
+/*coord_2d_area_triangle Test */
+START_TEST(test_2d_area_triangle)
+{
+    coord_2d_t a;
+    coord_2d_t b;
+    coord_2d_t c;
+    
+    a.x = 1;
+    a.y = 2;
 
+    b.x = 4;
+    b.y = 6;
+
+    c.x = 2;
+    c.y = 8;
+
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 7.0);
+    
+
+}
+END_TEST
+
+/*coord_2d_area_triangle Test */
+START_TEST(test_2d_area_triangle_2)
+{
+    coord_2d_t a;
+    coord_2d_t b;
+    coord_2d_t c;
+    
+    a.x = 0;
+    a.y = 1;
+
+    b.x = 3;
+    b.y = 5;
+
+    c.x = 1;
+    c.y = 7;
+
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 7.0);
+    
+
+}
+END_TEST
 /* coord_2d_midpoint Test */
 START_TEST(test_2d_midpoint)
 {
