@@ -1,4 +1,7 @@
-sudo: required
-script: make test
-install: make dep
 language: c
+
+sudo: required
+
+install: make dep
+
+script: make && make test
